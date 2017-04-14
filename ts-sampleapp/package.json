@@ -1,0 +1,26 @@
+{
+  "name": "ts-sampleapp",
+  "version": "0.0.2",
+  "description": "practice typescript",
+  "main": "./lib/greeter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run clean && npm run tsc && npm run webpack && npm run copy-html",
+    "copy-html": "copyfiles -u 1 src/**/*.html lib",
+    "webpack": "webpack ./lib/sampleApp.js ./lib/bundle.js",
+    "serve": "http-server lib",
+    "clean": "rimraf lib",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.3"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "copyfiles": "^1.2.0",
+    "http-server": "^0.9.0"
+  }
+}
