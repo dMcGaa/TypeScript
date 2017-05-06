@@ -1,2 +1,16 @@
-# Library Files
-lib/
+#ignore everything
+/*
+/*/
+
+#ignore specific folders
+**/dist/
+**/lib/
+
+#Track specific files
+!.gitignore
+!README.md
+
+#Track specific folders
+!/ts-sampleapp/
+!/ts-greeter/
+!/ts-ng2-basic/
